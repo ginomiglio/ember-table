@@ -61,6 +61,20 @@ export default PageObject.extend({
   },
 
   /**
+   * Retrieves the logical width of the table.
+   */
+  get logicalWidth() {
+    return window.getComputedStyle(findElement(this, 'table')).width;
+  },
+
+  /**
+   * Retrieves the rendered width of the table.
+   */
+  get renderedWidth() {
+    return findElement(this, 'table').getBoundingClientRect().width;
+  },
+
+  /**
    * Returns the table container width.
    *
    * offsetWidth returns a rounded integer, and so can
@@ -70,6 +84,20 @@ export default PageObject.extend({
    */
   get containerWidth() {
     return findElement(this).offsetWidth;
+  },
+
+  /**
+   * Retrieves the logical width of the container.
+   */
+  get logicalContainerWidth() {
+    return window.getComputedStyle(findElement(this)).width;
+  },
+
+  /**
+   * Retrieves the rendered width of the container.
+   */
+  get renderedContainerWidth() {
+    return findElement(this).getBoundingClientRect().width;
   },
 
   /**
