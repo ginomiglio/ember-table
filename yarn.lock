@@ -1060,7 +1060,7 @@
     core-js-compat "^3.20.2"
     semver "^6.3.0"
 
-"@babel/preset-env@^7.12.11", "@babel/preset-env@^7.16.7":
+"@babel/preset-env@^7.16.7":
   version "7.16.11"
   resolved "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.16.11.tgz#5dd88fd885fae36f88fd7c8342475c9f0abe2982"
   integrity sha512-qcmWG8R7ZW6WBRPZK//y+E3Cli151B20W1Rv7ln27vuPaXU/8TKms6jFdiJtF7UDTxcrb7mZd88tAeK9LjdT8g==
@@ -1502,11 +1502,6 @@
   integrity sha512-s1zLBjWhdEI2zwaoSgyOFoKSl109CUcVBCc7biPJ3aAf6LGLU6szDvi31JPU7bxfla2lqfhjbbg/5DdFNxOwHw==
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
-
-"@ro0gr/ceibo@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@ro0gr/ceibo/-/ceibo-2.2.0.tgz#01c4f3c8e6bfab98136d5863f55ac24e64c74539"
-  integrity sha512-4gSXPwwr99zUWxnTllN5L4QlfgFDloYKOsenoPvx46LE75x3wvLgGUhxUxhIMxJbqOZ0w9pzrugjQR7St0/PQg==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
@@ -5345,7 +5340,7 @@ ember-auto-import@^2.0.0:
     typescript-memoize "^1.0.0-alpha.3"
     walk-sync "^0.3.3"
 
-ember-auto-import@^2.2.4, ember-auto-import@^2.4.0:
+ember-auto-import@^2.2.4:
   version "2.4.0"
   resolved "https://registry.npmjs.org/ember-auto-import/-/ember-auto-import-2.4.0.tgz#91c4797f08315728086e35af954cb60bd23c14bc"
   integrity sha512-BwF6iTaoSmT2vJ9NEHEGRBCh2+qp+Nlaz/Q7roqNSxl5oL5iMRwenPnHhOoBPTYZvPhcV/KgXR5e+pBQ107plQ==
@@ -5381,15 +5376,6 @@ ember-auto-import@^2.2.4, ember-auto-import@^2.4.0:
     typescript-memoize "^1.0.0-alpha.3"
     walk-sync "^3.0.0"
 
-ember-classy-page-object@^0.8.0-beta:
-  version "0.8.0-beta"
-  resolved "https://registry.npmjs.org/ember-classy-page-object/-/ember-classy-page-object-0.8.0-beta.tgz#1e388e90e5205c617f48450fae764c6f90c38217"
-  integrity sha512-jO6t7KJWnSSBy/gbOtO0lXEnh/7tm/tNJB0KC6ZZOT9ich67rY46N+6Ras5uqeU0rPdyuiPBeKYSCxtEdcsacQ==
-  dependencies:
-    broccoli-funnel "^2.0.1"
-    ember-cli-babel "^7.12.0"
-    ember-cli-page-object "~v2.0.0-beta.3"
-
 ember-cli-babel-plugin-helpers@^1.0.0, ember-cli-babel-plugin-helpers@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.1.1.tgz#5016b80cdef37036c4282eef2d863e1d73576879"
@@ -5414,7 +5400,7 @@ ember-cli-babel@^6.11.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.2, ember-c
     ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
-ember-cli-babel@^7.0.0, ember-cli-babel@^7.12.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.20.5, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.24.0, ember-cli-babel@^7.26.4, ember-cli-babel@^7.26.6, ember-cli-babel@^7.26.8, ember-cli-babel@^7.7.3:
+ember-cli-babel@^7.0.0, ember-cli-babel@^7.12.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.20.5, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.26.4, ember-cli-babel@^7.26.6, ember-cli-babel@^7.26.8, ember-cli-babel@^7.7.3:
   version "7.26.11"
   resolved "https://registry.npmjs.org/ember-cli-babel/-/ember-cli-babel-7.26.11.tgz#50da0fe4dcd99aada499843940fec75076249a9f"
   integrity sha512-JJYeYjiz/JTn34q7F5DSOjkkZqy8qwFOOxXfE6pe9yEJqWGu4qErKxlz8I22JoVEQ/aBUO+OcKTpmctvykM9YA==
@@ -5613,21 +5599,6 @@ ember-cli-normalize-entity-name@^1.0.0:
   dependencies:
     silent-error "^1.0.0"
 
-ember-cli-page-object@~v2.0.0-beta.3:
-  version "2.0.0-beta.3"
-  resolved "https://registry.npmjs.org/ember-cli-page-object/-/ember-cli-page-object-2.0.0-beta.3.tgz#49ecc2239f061d801ad208d6a933db1d3906c088"
-  integrity sha512-swUbl4HnHEK3H6s+ivhEN+RBNgznIxHt3AHT4qQqSIQFrUdEck/s1/Z5lDl1rPOxuWvz5nnKt+W4GOu27muTMA==
-  dependencies:
-    "@babel/preset-env" "^7.12.11"
-    "@ro0gr/ceibo" "^2.2.0"
-    broccoli-file-creator "^2.1.1"
-    broccoli-merge-trees "^2.0.0"
-    ember-auto-import "^2.4.0"
-    ember-cli-babel "^7.24.0"
-    ember-cli-typescript "^4.1.0"
-    jquery "^3.4.1"
-    rsvp "^4.7.0"
-
 ember-cli-path-utils@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/ember-cli-path-utils/-/ember-cli-path-utils-1.0.0.tgz#4e39af8b55301cddc5017739b77a804fba2071ed"
@@ -5697,7 +5668,7 @@ ember-cli-typescript@^2.0.2:
     stagehand "^1.0.0"
     walk-sync "^1.0.0"
 
-ember-cli-typescript@^4.1.0, ember-cli-typescript@^4.2.1:
+ember-cli-typescript@^4.2.1:
   version "4.2.1"
   resolved "https://registry.npmjs.org/ember-cli-typescript/-/ember-cli-typescript-4.2.1.tgz#54d08fc90318cc986f3ea562f93ce58a6cc4c24d"
   integrity sha512-0iKTZ+/wH6UB/VTWKvGuXlmwiE8HSIGcxHamwNhEC5x1mN3z8RfvsFZdQWYUzIWFN2Tek0gmepGRPTwWdBYl/A==
@@ -9004,7 +8975,7 @@ jest-worker@^27.4.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jquery@^3.4.1, jquery@^3.5.1:
+jquery@^3.5.1:
   version "3.6.0"
   resolved "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
