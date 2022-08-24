@@ -294,7 +294,7 @@ export default Component.extend({
 
   _updateColumnTree() {
     this.columnTree.set('sorts', this.get('sorts'));
-    this.columnTree.set('columns', this.get('columns'));
+    this.columnTree.setColumns(this.get('columns'));
     this.columnTree.set('fillMode', this.get('fillMode'));
     this.columnTree.set('initialFillMode', this.get('initialFillMode'));
     this.columnTree.set('fillColumnIndex', this.get('fillColumnIndex'));

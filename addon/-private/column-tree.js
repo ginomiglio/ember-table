@@ -191,6 +191,14 @@ const ColumnTreeNode = EmberObject.extend({
   },
 
   destroy() {
+    if (this._notifyMaxChildDepth) {
+      removeObserver(this, 'maxChildDepth', this._notifyMaxChildDepth);
+    }
+
+    if (this._notifyLeaves) {
+      removeObserver(this, 'leaves.[]', this._notifyLeaves);
+    }
+
     this.cleanSubcolumnNodes();
 
     this._super(...arguments);
@@ -607,11 +615,21 @@ export default EmberObject.extend({
     this._super(...arguments);
   },
 
-  root: computed('columns', function() {
-    let columns = get(this, 'columns');
+  setColumns(columns) {
+    set(this, 'columns', columns);
+    this.updateRoot();
+  },
 
-    return ColumnTreeNode.create({ column: { subcolumns: columns }, tree: this });
-  }),
+  updateRoot() {
+    // Destroy previous root node if present, to prevent memory leaks
+    let root = get(this, 'root');
+    if (root) {
+      root.destroy();
+    }
+
+    let columns = get(this, 'columns');
+    set(this, 'root', ColumnTreeNode.create({ column: { subcolumns: columns }, tree: this }));
+  },
 
   rows: computed('root.{maxChildDepth,leaves.[]}', function() {
     let rows = emberA();
